@@ -36,7 +36,7 @@ message = f'Start spawning instance VM.Standard.A1.Flex - {ocpus} ocpus - {memor
 logging.info(message)
 
 logging.info("Loading OCI config")
-config = oci.config.from_file(file_location="./config")
+config = oci.config.from_file(file_location="config")
 
 logging.info("Initialize service client with default config file")
 to_launch_instance = oci.core.ComputeClient(config)
